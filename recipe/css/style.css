@@ -1,0 +1,94 @@
+/* General Page*/
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background: url('../img/background-image-17.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
+    color: white;
+    background-color: rgba();
+}
+
+
+/* Navbar */
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #999;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    width: 140px;
+    padding: 10px;
+    /*remove underline on links*/
+    text-decoration: none;
+    /* change link color*/
+    color: white;
+}
+
+li a:hover {
+    background-color: rgba(245,245,245,0.1);
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+li input {
+    display: block;
+    text-align: left;
+    width: 200px;
+    padding: 5px;
+    margin-left: 620px;
+}
+
+/* Body */
+
+h1 {
+    margin-left: 26px;
+}
+
+.container-fluid {
+    width: 96%;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.thumbnail-fluid {
+    margin: 0 auto;
+    width: 48%;
+    height: 300px;
+    float: left;
+    padding: 1%;
+}
+
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+    /* for backward compatibility */
+    height: 0;
+    font-size: 0;
+    /*extra backup*/
+    visibility: hidden;
+}
+
+h3, p, form {
+     background-color: rgba(245,245,245,0.1);
+}
