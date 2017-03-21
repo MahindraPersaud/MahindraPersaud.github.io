@@ -754,16 +754,6 @@ header .logo a {
     text-align: center;
 }
 
-.intro-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #111111;
-    opacity: .85;
-}
-
 .intro-content {
     display: table-cell;
     vertical-align: middle;
@@ -1379,18 +1369,6 @@ header .logo a {
     }
 }
 
-
-/* Carousel */
-
-.carousel {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
-
-#slider {}
-
-
 /* Contact */
 
 #contact {
@@ -1419,7 +1397,7 @@ header .logo a {
 }
 
 .contact-form .placeholder {
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
 #contact form {
@@ -1448,7 +1426,8 @@ header .logo a {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border
 }
 
 #contact input[type="text"],
@@ -1459,7 +1438,7 @@ header .logo a {
 
 #contact input[type="text"]:focus,
 #contact input[type="email"]:focus {
-    border-color: #FF0077;
+    border-color: #800000;
     color: #FFFFFF;
 }
 
