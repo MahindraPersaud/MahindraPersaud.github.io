@@ -67,7 +67,6 @@ h6 {
     font-family: "gloria_hallelujahregular", sans-serif;
     color: #800000;
     font-style: normal;
-    text-rendering: optimizeLegibility;
     margin-bottom: 2.1rem;
 }
 
@@ -1021,7 +1020,7 @@ header .logo a {
     width: 250px;
 }
 
-.button-section [class*="col-"] .button:first-child {
+.button-section [class*="column-"] .button:first-child {
     margin-right: 4rem;
 }
 
@@ -1051,7 +1050,7 @@ header .logo a {
         width: 100%;
         margin-bottom: 3rem;
     }
-    .button-section [class*="col-"] .button:first-child {
+    .button-section [class*="column-"] .button:first-child {
         margin-right: 0;
     }
 }
