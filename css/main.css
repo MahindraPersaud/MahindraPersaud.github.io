@@ -191,30 +191,30 @@ form {
 
 /* Padding for various sizes */
 
-.bgrid {
+.blockedGrid {
     padding: 0 20px;
 }
 
 @media only screen and (max-width:1024px) {
-    .bgrid {
+    .blockedGrid {
         padding: 0 18px;
     }
 }
 
 @media only screen and (max-width:768px) {
-    .bgrid {
+    .blockedGrid {
         padding: 0 15px;
     }
 }
 
 @media only screen and (max-width:600px) {
-    .bgrid {
+    .blockedGrid {
         padding: 0 10px;
     }
 }
 
 @media only screen and (max-width:400px) {
-    .bgrid {
+    .blockedGrid {
         padding: 0;
     }
 }
@@ -336,6 +336,7 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
+
 /* Skill Bars */
 
 .skill-bars {
@@ -393,6 +394,10 @@ input::-moz-focus-inner {
     border-left: 5px solid transparent;
     border-top: 5px solid #313131;
     content: "";
+}
+
+.skill-bars li .percent01 {
+    width: 1%;
 }
 
 .skill-bars li .percent5 {
@@ -637,6 +642,7 @@ header .logo a {
 
 
 /* is clicked */
+
 .menu-toggle.is-clicked span {
     background-color: rgba(255, 0, 119, 0);
 }
@@ -1247,6 +1253,7 @@ header .logo a {
     }
 }
 
+
 /* Services */
 
 #services {
@@ -1256,16 +1263,6 @@ header .logo a {
     padding-bottom: 12rem;
     color: white;
     position: relative;
-}
-
-#services .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #151515;
-    opacity: .9;
 }
 
 #services .section-intro {
@@ -1312,7 +1309,7 @@ header .logo a {
     color: #FFFFFF;
 }
 
-.services-list .desc {
+.services-list .service-description {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1382,16 +1379,17 @@ header .logo a {
     }
 }
 
+
 /* Carousel */
+
 .carousel {
-	display: inline-block;
-	position: relative;
-	width: 100%;
+    display: inline-block;
+    position: relative;
+    width: 100%;
 }
 
-#slider {
+#slider {}
 
-}
 
 /* Contact */
 
@@ -1441,32 +1439,6 @@ header .logo a {
 
 #contact form .form-field:after {
     clear: both;
-}
-
-#contact form .form-field label {
-    font-family: "poppins-bold", sans-serif;
-    font-size: 1.1rem;
-    line-height: 2.4rem;
-    position: absolute;
-    bottom: -1.2rem;
-    right: .6rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    padding: 0 2rem;
-    margin: 0;
-    color: #FFFFFF;
-    background: #FF0077;
-}
-
-#contact form .form-field label::after {
-    position: absolute;
-    left: -5px;
-    top: 50%;
-    margin-top: -6px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 5px solid #FF0077;
-    content: "";
 }
 
 #contact input[type="text"],
@@ -1542,6 +1514,7 @@ header .logo a {
 .contact-info h5 {
     color: #FFFFFF;
 }
+
 
 /* Footer */
 

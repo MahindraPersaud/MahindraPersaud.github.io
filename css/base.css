@@ -54,17 +54,6 @@ html input[type="button"] {
 	cursor: pointer;
 }
 
-button[disabled],
-html input[disabled] {
-	cursor: default;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
 input {
 	line-height: normal;
 }
@@ -180,7 +169,7 @@ textarea {
 }
 
 [class*="column-"],
-.bgrid {
+.blockedGrid {
 	float: left;
 }
 
@@ -375,60 +364,60 @@ textarea {
 	clear: both;
 }
 
-.block-1-6 .bgrid {
+.block-1-6 .blockedGrid {
 	width: 16.66667%;
 }
 
-.block-1-4 .bgrid {
+.block-1-4 .blockedGrid {
 	width: 25%;
 }
 
-.block-1-3 .bgrid {
+.block-1-3 .blockedGrid {
 	width: 33.33333%;
 }
 
-.block-1-2 .bgrid {
+.block-1-2 .blockedGrid {
 	width: 50%;
 }
 
-.block-1-6 .bgrid:nth-child(6n+1),
-.block-1-4 .bgrid:nth-child(4n+1),
-.block-1-3 .bgrid:nth-child(3n+1),
-.block-1-2 .bgrid:nth-child(2n+1) {
+.block-1-6 .blockedGrid:nth-child(6n+1),
+.block-1-4 .blockedGrid:nth-child(4n+1),
+.block-1-3 .blockedGrid:nth-child(3n+1),
+.block-1-2 .blockedGrid:nth-child(2n+1) {
 	clear: both;
 }
 
 /* Small Screens */
 @media screen and (max-width:1024px) {
-	.block-s-1-6 .bgrid {
+	.block-s-1-6 .blockedGrid {
 		width: 16.66667%;
 	}
 
-	.block-s-1-4 .bgrid {
+	.block-s-1-4 .blockedGrid {
 		width: 25%;
 	}
 
-	.block-s-1-3 .bgrid {
+	.block-s-1-3 .blockedGrid {
 		width: 33.33333%;
 	}
 
-	.block-s-1-2 .bgrid {
+	.block-s-1-2 .blockedGrid {
 		width: 50%;
 	}
 
-	.block-s-full .bgrid {
+	.block-s-full .blockedGrid {
 		width: 100%;
 		clear: both;
 	}
 
-	[class*="block-s-"] .bgrid:nth-child(n) {
+	[class*="block-s-"] .blockedGrid:nth-child(n) {
 		clear: none;
 	}
 
-	.block-s-1-6 .bgrid:nth-child(6n+1),
-	.block-s-1-4 .bgrid:nth-child(4n+1),
-	.block-s-1-3 .bgrid:nth-child(3n+1),
-	.block-s-1-2 .bgrid:nth-child(2n+1) {
+	.block-s-1-6 .blockedGrid:nth-child(6n+1),
+	.block-s-1-4 .blockedGrid:nth-child(4n+1),
+	.block-s-1-3 .blockedGrid:nth-child(3n+1),
+	.block-s-1-2 .blockedGrid:nth-child(2n+1) {
 		clear: both;
 	}
 
@@ -436,35 +425,35 @@ textarea {
 
 /* Tablets */
 @media screen and (max-width:768px) {
-	.block-tab-1-6 .bgrid {
+	.block-tab-1-6 .blockedGrid {
 		width: 16.66667%;
 	}
 
-	.block-tab-1-4 .bgrid {
+	.block-tab-1-4 .blockedGrid {
 		width: 25%;
 	}
 
-	.block-tab-1-3 .bgrid {
+	.block-tab-1-3 .blockedGrid {
 		width: 33.33333%;
 	}
 
-	.block-tab-1-2 .bgrid {
+	.block-tab-1-2 .blockedGrid {
 		width: 50%;
 	}
 
-	.block-tab-full .bgrid {
+	.block-tab-full .blockedGrid {
 		width: 100%;
 		clear: both;
 	}
 
-	[class*="block-tab-"] .bgrid:nth-child(n) {
+	[class*="block-tab-"] .blockedGrid:nth-child(n) {
 		clear: none;
 	}
 
-	.block-tab-1-6 .bgrid:nth-child(6n+1),
-	.block-tab-1-4 .bgrid:nth-child(4n+1),
-	.block-tab-1-3 .bgrid:nth-child(3n+1),
-	.block-tab-1-2 .bgrid:nth-child(2n+1) {
+	.block-tab-1-6 .blockedGrid:nth-child(6n+1),
+	.block-tab-1-4 .blockedGrid:nth-child(4n+1),
+	.block-tab-1-3 .blockedGrid:nth-child(3n+1),
+	.block-tab-1-2 .blockedGrid:nth-child(2n+1) {
 		clear: both;
 	}
 
@@ -472,35 +461,35 @@ textarea {
 
 /* Large  mobile */
 @media screen and (max-width:600px) {
-	.block-mob-1-6 .bgrid {
+	.block-mob-1-6 .blockedGrid {
 		width: 16.66667%;
 	}
 
-	.block-mob-1-4 .bgrid {
+	.block-mob-1-4 .blockedGrid {
 		width: 25%;
 	}
 
-	.block-mob-1-3 .bgrid {
+	.block-mob-1-3 .blockedGrid {
 		width: 33.33333%;
 	}
 
-	.block-mob-1-2 .bgrid {
+	.block-mob-1-2 .blockedGrid {
 		width: 50%;
 	}
 
-	.block-mob-full .bgrid {
+	.block-mob-full .blockedGrid {
 		width: 100%;
 		clear: both;
 	}
 
-	[class*="block-mob-"] .bgrid:nth-child(n) {
+	[class*="block-mob-"] .blockedGrid:nth-child(n) {
 		clear: none;
 	}
 
-	.block-mob-1-6 .bgrid:nth-child(6n+1),
-	.block-mob-1-4 .bgrid:nth-child(4n+1),
-	.block-mob-1-3 .bgrid:nth-child(3n+1),
-	.block-mob-1-2 .bgrid:nth-child(2n+1) {
+	.block-mob-1-6 .blockedGrid:nth-child(6n+1),
+	.block-mob-1-4 .blockedGrid:nth-child(4n+1),
+	.block-mob-1-3 .blockedGrid:nth-child(3n+1),
+	.block-mob-1-2 .blockedGrid:nth-child(2n+1) {
 		clear: both;
 	}
 
@@ -508,7 +497,8 @@ textarea {
 
 /* Small Screen */
 @media screen and (max-width:400px) {
-	.stack .bgrid {
+	.stack .blockedGrid
+ {
 		width: 100% !important;
 		float: none !important;
 		clear: both !important;
