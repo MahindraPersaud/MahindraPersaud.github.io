@@ -1462,12 +1462,13 @@ header .logo a {
     margin-top: 4.8rem;
     width: 100%;
     background: #800000;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 #contact button.submitform:hover,
 #contact button.submitform:focus {
     background: #FFFFFF;
+    color: #000000;
 }
 
 .contact-info {
@@ -1560,7 +1561,6 @@ footer .footer-social li a {
     bottom: 0;
     right: 0;
     z-index: 600;
-    display: none;
 }
 
 #go-top a {
@@ -1571,7 +1571,7 @@ footer .footer-social li a {
     width: 6rem;
     line-height: 6.6rem;
     text-align: center;
-    background: #cc005f;
+    background: #800000;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
@@ -1584,5 +1584,6 @@ footer .footer-social li a {
 }
 
 #go-top a:hover {
-    background: #800000;
+    background: #FFFFFF;
+    color: #000000;
 }
