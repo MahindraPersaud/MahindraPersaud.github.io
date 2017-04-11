@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B A T T L E S H I P</title>
+    <link rel="stylesheet" href="./visual.css" />
+    <script type="text/javascript" src="./command.js"></script>
+</head>
+
+<body onload="init();">
+    <div class="title">
+        <h1>BATTLESHIP</h1></div>
+    <br />
+    <div class="instructions"><b>Instructions:</b> An enemy fleet is approaching our base, Admiral! Initial reconnaisance suggests that the fleet has halted and is preparing to launch nuclear weapons at us! Our scanners indicate that every ship in the fleet has nuclear capablilities, so your orders are to destroy them before their weapons are operational, ETA 50 turns. Our anti-ship ranged artillery systems are ready at your disposal. Godspeed, Admiral!</div>
+    <br />
+    <a class="event" id="event"></a>
+    <br />
+    <div class="game">
+        <table class="board" id="output">
+        </table>
+        <br />What are your orders, Admiral?
+        <br />
+        <input type="text" maxlength="3" size="3" onkeypress="enter(event);" id="coor" />
+        <button onclick="fire();">Fire!</button>
+    </div>
+</body>
+
+</html>

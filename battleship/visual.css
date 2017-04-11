@@ -1,0 +1,42 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.title {
+    text-align: center;
+}
+
+.game {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.event {
+    text-align: center;
+    color: red;
+}
+
+table.sample {
+    border-width: 1px;
+    border-spacing: 0px;
+    border-style: solid;
+    border-color: gray;
+    border-collapse: separate;
+}
+
+table.board th {
+    border-width: 3px;
+    padding: 1px;
+    border-style: inset;
+    border-color: gray;
+    padding: 6px;
+}
+
+table.board td {
+    border-width: 3px;
+    padding: 1px;
+    border-style: inset;
+    border-color: gray;
+    padding: 6px;
+}
