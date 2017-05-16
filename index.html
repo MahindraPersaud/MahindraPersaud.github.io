@@ -543,26 +543,26 @@
         <div class="row contact-form">
             <div class="column-twelve">
                 <!-- form -->
-                <form name="contactForm" id="contactForm" method="post" action="">
+                <form name="contactForm" id="contactForm" method="post" action="http://formspree.io/mahindrapersaud1@gmail.com">
                     <fieldset>
                         <div class="form-field">
-                            Name:&nbsp;&nbsp;
-                            <input name="contactName" type="text" id="contactName" placeholder="" value="" minlength="2 " required="">
+                            Name:
+                            <input name="contactName" type="text" id="contactName">
                         </div>
                         <div class="form-field">
-                            Email:&nbsp;&nbsp;&nbsp;
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="" value="" required="">
+                            Email:
+                            <input name="contactEmail" type="email" id="contactEmail">
                         </div>
                         <div class="form-field">
                             Subject:
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="" value="">
+                            <input name="contactSubject" type="text" id="contactSubject">
                             <br/>
                         </div>
                         <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder=">message" rows="10" cols="50" required=""></textarea>
+                            <textarea name="contactMessage" id="contactMessage" placeholder=">message" rows="10" cols="50"></textarea>
                         </div>
                         <div class="form-field">
-                            <button class="submitform ">Submit</button>
+                            <input type="submit" name="send" class="submitform">
                         </div>
                     </fieldset>
                 </form>

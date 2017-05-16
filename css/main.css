@@ -272,7 +272,8 @@ textarea {
 
 .button,
 a.button,
-button {
+button, 
+input.submitform{
     display: inline-block;
     font-family: "poppins-bold", sans-serif;
     font-size: 1.4rem;
@@ -296,7 +297,9 @@ button {
 a.button:hover,
 button:hover,
 .button:focus,
-button:focus {
+button:focus,
+input.submitform:hover,
+input.submitform:focus {
     background: #bebebe;
     color: #800000;
     outline: 0;
@@ -1452,7 +1455,7 @@ header .logo a {
     color: #FFFFFF;
 }
 
-#contact button.submitform {
+#contact input.submitform {
     font-size: 1.5rem;
     display: block;
     letter-spacing: .2rem;
@@ -1465,8 +1468,8 @@ header .logo a {
     color: #FFFFFF;
 }
 
-#contact button.submitform:hover,
-#contact button.submitform:focus {
+#contact input.submitform:hover,
+#contact input.submitform:focus {
     background: #FFFFFF;
     color: #000000;
 }
