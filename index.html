@@ -18,6 +18,9 @@
     <!-- script
    ================================================== -->
     <script src="js/pace.min.js"></script>
+    <!-- Formspree meta
+   ================================================== -->
+    <meta name="referrer" content="origin" />
 </head>
 
 <body id="top">
@@ -547,19 +550,14 @@
                     <fieldset>
                         <div class="form-field">
                             Name:
-                            <input name="contactName" type="text" id="contactName">
+                            <input name="name" type="text" id="contactName">
                         </div>
                         <div class="form-field">
                             Email:
-                            <input name="contactEmail" type="email" id="contactEmail">
+                            <input name="_replyto" type="email" id="contactEmail">
                         </div>
                         <div class="form-field">
-                            Subject:
-                            <input name="contactSubject" type="text" id="contactSubject">
-                            <br/>
-                        </div>
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder=">message" rows="10" cols="50"></textarea>
+                            <textarea name="message" id="contactMessage" placeholder=">message" rows="10" cols="50"></textarea>
                         </div>
                         <div class="form-field">
                             <input type="submit" name="send" class="submitform">
