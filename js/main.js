@@ -127,7 +127,7 @@
     });
 
     /* Portfolio Modal Popups */
-    $('.item-wrap').magnificPopup({
+    $('.item-wrap a').magnificPopup({
         delegate: 'a',
         type: 'inline',
         midClick: true,
