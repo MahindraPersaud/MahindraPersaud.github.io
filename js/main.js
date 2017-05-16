@@ -66,7 +66,7 @@
     // nav items
     nav.find('li a').on("click", function() {
 
-        // update the toggle button 		
+        // update the toggle button         
         toggleButton.toggleClass('is-clicked');
         // fadeout the navigation panel
         nav.fadeOut();
@@ -114,15 +114,52 @@
 
     });
 
+    /* Portfolio */
+    var containerProjects = $('#folio-wrapper');
 
-    /*  Placeholder Plugin Settings */
-    $('input, textarea').placeholder()
+    containerProjects.imagesLoaded(function() {
+
+        containerProjects.masonry({
+            itemSelector: '.folio-item',
+            resize: true
+        });
+
+    });
+
+    /* Portfolio Modal Popups */
+    $('.item-wrap').magnificPopup({
+        delegate: 'a',
+        type: 'inline',
+        midClick: true,
+        fixedContentPos: false,
+        removalDelay: 300,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+
+    });
+
+    $(document).on('click', '.popup-modal-dismiss', function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+
+
+    /* Photo Carousel */
+    $('.owlCarousel').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        nav: true,
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true
+    });
 
     /* Back to top */
     var pxShow = 300; // height on which the button will show
     var fadeInTime = 400; // how slow/fast you want the button to show
     var fadeOutTime = 400; // how slow/fast you want the button to hide
     var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-
 
 })(jQuery);
