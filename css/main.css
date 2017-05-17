@@ -51,7 +51,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-    color: #FF0077;
+    color: #FFFFFF;
     outline: 0;
 }
 
@@ -1296,6 +1296,8 @@ header .logo a {
     font-size: 3.3rem;
     padding: 0 3rem;
     margin-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: #800000;
 }
 
 #portfolio .folio-types {
@@ -1306,6 +1308,8 @@ header .logo a {
     font-size: 1.2rem;
     letter-spacing: .1rem;
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    text-decoration-color: #800000;
 }
 
 #portfolio .folio-item:hover .overlay {
@@ -1344,40 +1348,46 @@ header .logo a {
 
 /* modal popup */
 
-.popup-modal {
-    max-width: 550px;
+.modal {
+    max-width: 600px;
+    max-height: 550px;
     background: #FFFFFF;
     position: relative;
     margin: 0 auto;
 }
 
-.popup-modal .media {
-    position: relative;
+.modal .close {
+    height: auto;
 }
 
-.popup-modal img {
+.modal .media {
+    position: relative;
+    text-align: center;
+}
+
+.modal img {
     vertical-align: bottom;
 }
 
-.popup-modal .description-box {
+.modal .description-box {
     padding: 1.8rem 3.6rem 3rem;
 }
 
-.popup-modal .description-box h4 {
+.modal .description-box h4 {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.5rem;
     line-height: 2.4rem;
     margin-bottom: .6rem;
 }
 
-.popup-modal .description-box p {
+.modal .description-box p {
     font-family: "poppins-regular", sans-serif;
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin-bottom: 12px;
 }
 
-.popup-modal .categories {
+.modal .categories {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.1rem;
     line-height: 1.8rem;
@@ -1388,13 +1398,14 @@ header .logo a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.popup-modal .link-box {
+.modal .link-box {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    overflow: hidden;
     background: #000000;
 }
 
-.popup-modal .link-box a {
+.modal .link-box a {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.2rem;
     line-height: 6rem;
@@ -1409,17 +1420,17 @@ header .logo a {
     transition: all 0.3s ease-in-out;
 }
 
-.popup-modal .link-box a:first-child {
+.modal .link-box a:first-child {
     border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 
-.popup-modal .link-box a:hover {
+.modal .link-box a:hover {
     background: #800000;
-    color: #000000 border: none;
+    color: #000000, border: none;
 }
 
 @media only screen and (max-width:600px) {
-    .popup-modal {
+    .modal {
         width: auto;
         margin: 0 20px;
     }
@@ -1492,6 +1503,44 @@ header .logo a {
 #photos img {
     display: block;
     margin: 0 auto;
+}
+
+
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+
+/* display none until init */
+
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-prev {
+    display: inline;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.owl-carousel .owl-next {
+    display: inline;
+    padding: 10px;
+    font-size: 2em;
 }
 
 

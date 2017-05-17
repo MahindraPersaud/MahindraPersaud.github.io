@@ -10,6 +10,11 @@
     <!-- mobile specific metas
    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap sheets
+   ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- CSS
    ================================================== -->
     <link rel="stylesheet" href="css/base.css">
@@ -386,7 +391,7 @@
                     <div class="blockedGrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/battleship.jpg" alt="Battleship">
-                            <a href="#modal-01" class="overlay">
+                            <a href="#modal-01" class="overlay" data-toggle="modal" data-target="#modal-01">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
                                         <h3 class="folio-title">Battleship</h3>
@@ -401,8 +406,8 @@
                     <!-- /folio-item -->
                     <div class="blockedGrid folio-item">
                         <div class="item-wrap">
-                            <img src="images/portfolio/soundvoid.jpg" alt="Soundvoid">
-                            <a href="#modal-02" class="overlay">
+                            <img src="images/portfolio/soundvoid.png" alt="Soundvoid">
+                            <a href="#modal-02" class="overlay" data-toggle="modal" data-target="#modal-02">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
                                         <h3 class="folio-title">Project Soundvoid</h3>
@@ -417,8 +422,8 @@
                     <!-- /folio-item -->
                     <div class="blockedGrid folio-item">
                         <div class="item-wrap">
-                            <img src="images/portfolio/theTandon.jpg" alt="theTandon">
-                            <a href="#modal-03" class="overlay">
+                            <img src="images/portfolio/theTandon.png" alt="theTandon">
+                            <a href="#modal-03" class="overlay" data-toggle="modal" data-target="#modal-03">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
                                         <h3 class="folio-title">The Tandon</h3>
@@ -432,48 +437,63 @@
                     </div>
                     <!-- modal popups - begin
                 ============================================================= -->
-                    <div id="modal-01" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-battleship.jpg" alt="" />
-                        </div>
-                        <div class="description-box">
-                            <h4>Battleship</h4>
-                            <p>A single player version of the popular game battleship. Limited with only 50 turns. Do you think you can be the best captain?</p>
-                            <div class="categories">Game Development</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="mahindrapersaud.me/battleship">Details</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
+                    <div id="modal-01" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header media">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <img src="images/portfolio/modals/m-battleship.jpg" alt="" />
+                                </div>
+                                <div class="modal-body description-box">
+                                    <h4>Battleship</h4>
+                                    <p>A single player version of the popular game battleship. Limited with only 50 turns. Do you think you can be the best captain?</p>
+                                    <div class="categories">Game Development</div>
+                                </div>
+                                <div class="modal-footer link-box">
+                                    <a href="battleship/index.html">Details</a>
+                                    <a href="#" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- /modal-01 -->
-                    <div id="modal-02" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-soundvoid.jpg" alt="" />
-                        </div>
-                        <div class="description-box">
-                            <h4>Project Soundvoid</h4>
-                            <p>Project Soundvoid is a game which combines the tactices of escape the room with those of echo location. Do you think you can escape before being caught?</p>
-                            <div class="categories">Game Development</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#">Details</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
+                    <div id="modal-02" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header media">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <img src="images/portfolio/modals/m-soundvoid.png" alt="" />
+                                </div>
+                                <div class="modal-body description-box">
+                                    <h4>Project Soundvoid</h4>
+                                    <p>Project Soundvoid is a game which combines the tactices of escape the room with those of echo location. Do you think you can escape before being caught?</p>
+                                    <div class="categories">Game Development</div>
+                                </div>
+                                <div class="modal-footer link-box">
+                                    <a href="#">Details</a>
+                                    <a href="#" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- /modal-02 -->
-                    <div id="modal-03" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-theTandon.jpg" alt="" />
-                        </div>
-                        <div class="description-box">
-                            <h4>The Tandon</h4>
-                            <p>The Tandon is a website created to help assist and aid students for their courses. It is meant to help reduce clutter, improve productivivty, and allow students to understand the classes they're currently undergoing and planning to take.</p>
-                            <div class="categories">Web Design</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#">Details</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
+                    <div id="modal-03" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header media">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <img src="images/portfolio/modals/m-theTandon.png" alt="" />
+                                </div>
+                                <div class="modal-body description-box">
+                                    <h4>The Tandon</h4>
+                                    <p>The Tandon is a website created to help assist and aid students for their courses. It is meant to help reduce clutter, improve productivivty, and allow students to understand the classes they're currently undergoing and planning to take.</p>
+                                    <div class="categories">Web Design</div>
+                                </div>
+                                <div class="modal-footer link-box">
+                                    <a href="#">Details</a>
+                                    <a href="#" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- /modal-03 -->
@@ -498,16 +518,15 @@
         <!-- /section-intro -->
         <div class="row photos-content">
             <div class="column-twelve">
-                <div class="owl-carousel owl-theme">
-                    <img src="images/carousel/1.jpg">
-                    <img src="images/carousel/2.jpg">
-                    <img src="images/carousel/3.jpg">
-                    <img src="images/carousel/4.jpg">
-                    <img src="images/carousel/5.jpg">
-                    <img src="images/carousel/6.jpg">
-                    <img src="images/carousel/7.jpg">
-                    <img src="images/carousel/8.jpg">
-                    <img src="images/carousel/9.jpg">
+                <div class="owl-carousel">
+                    <div><img src="images/carousel/1.jpg"></div>
+                    <div><img src="images/carousel/2.jpg"></div>
+                    <div><img src="images/carousel/3.jpg"></div>
+                    <div><img src="images/carousel/4.jpg"></div>
+                    <div><img src="images/carousel/5.jpg"></div>
+                    <div><img src="images/carousel/6.jpg"></div>
+                    <div><img src="images/carousel/7.jpg"></div>
+                    <div><img src="images/carousel/8.jpg"></div>
                 </div>
                 <!-- /owl-carousel -->
             </div>
@@ -737,7 +756,7 @@
                     <br>patience.
                 </p>
             </div>
-            <div class="column-four tab-full collapse">
+            <div class="column-four tab-full">
                 <div class="icon">
                     <i class="icon-mail"></i>
                 </div>
@@ -780,10 +799,10 @@
     <!-- Owl Slider
    ================================================== -->
     <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

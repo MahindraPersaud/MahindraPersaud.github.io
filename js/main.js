@@ -126,29 +126,10 @@
 
     });
 
-    /* Portfolio Modal Popups */
-    $('.item-wrap').magnificPopup({
-        delegate: 'a',
-        type: 'inline',
-        midClick: true,
-        fixedContentPos: false,
-        removalDelay: 300,
-        showCloseBtn: false,
-        mainClass: 'mfp-fade'
-
-    });
-
-    $(document).on('click', '.popup-modal-dismiss', function(e) {
-        e.preventDefault();
-        $.magnificPopup.close();
-    });
-
-
     /* Photo Carousel */
-    $('.owlCarousel').owlCarousel({
+    $(".owl-carousel").owlCarousel({
         items: 1,
         loop: true,
-        center: true,
         nav: true,
         animateOut: 'fadeOut',
         autoplay: true,
