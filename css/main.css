@@ -1368,12 +1368,6 @@ header .logo a {
       height: 100%;
     }
 }
-  
-.modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-  }
 
 .modal .close {
     height: auto;
