@@ -1355,7 +1355,8 @@ header .logo a {
     position: absolute;
     left: 50%;
     margin-left: -300px;
-    right: 50%;
+    top: 50%;
+    margin-top: -275px;
 }
 
 .modal .close {
