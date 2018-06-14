@@ -1352,8 +1352,10 @@ header .logo a {
     max-width: 600px;
     max-height: 550px;
     background: #FFFFFF;
-    position: relative;
-    margin: 0 10%;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    right: 50%;
 }
 
 .modal .close {
