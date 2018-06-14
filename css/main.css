@@ -1352,11 +1352,11 @@ header .logo a {
     max-width: 600px;
     max-height: 550px;
     background: #FFFFFF;
-    position: relative;
-    /* left: 50%;
+    position: absolute;
+    left: 50%;
     margin-left: -300px;
     top: 50%;
-    margin-top: -275px; */
+    margin-top: -275px;
     text-align: center;
 }
   
