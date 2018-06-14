@@ -1426,7 +1426,8 @@ header .logo a {
 
 .modal .link-box a:hover {
     background: #800000;
-    color: #000000, border: none;
+    color: #000000;
+    border: none;
 }
 
 @media only screen and (max-width:600px) {
@@ -1728,7 +1729,6 @@ header .logo a {
     margin-bottom: 0;
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border
 }
 
 #contact input[type="text"],
