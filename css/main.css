@@ -1352,7 +1352,7 @@ header .logo a {
     max-width: 600px;
     max-height: 550px;
     background: #FFFFFF;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-left: -300px;
     top: 50%;
