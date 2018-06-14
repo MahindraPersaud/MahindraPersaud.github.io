@@ -1355,18 +1355,7 @@ header .logo a {
     position: relative;
     left: 50%;
     margin-left: -300px;
-    top: 50%;
-    margin-top: -275px;
-    text-align: center;
-}
-  
-@media screen and (min-width: 768px) { 
-    .modal:before {
-      display: inline-block;
-      vertical-align: middle;
-      content: " ";
-      height: 100%;
-    }
+    top: 20%;
 }
 
 .modal .close {
