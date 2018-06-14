@@ -556,6 +556,7 @@ header {
 
 header .row {
     position: relative;
+    min-width: 220px;
     min-height: 66px;
 }
 
