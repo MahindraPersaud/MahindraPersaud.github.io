@@ -6,7 +6,6 @@
 
 html {
     font-size: 10px;
-    margin: 0 0;
 }
 
 @media only screen and (max-width:1024px) {
@@ -550,7 +549,6 @@ input::-moz-focus-inner {
 
 header {
     position: fixed;
-    width: 100%;
     min-height: 66px;
     z-index: 600;
 }
